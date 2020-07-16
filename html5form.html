@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>HTML5 Form Validation Example</title>
+<style type="text/css">
+
+  input:required:invalid, input:focus:invalid {
+    background-image: url(/images/invalid.png);
+    background-position: right top;
+    background-repeat: no-repeat;
+  }
+  input:required:valid {
+    background-image: url(/images/valid.png);
+    background-position: right top;
+    background-repeat: no-repeat;
+  }
+
+</style>
+</head>
+<body bgcolor="lavendar">
+<form action="C:/Users/Trust/Desktop/html5.html" method="post">
+<table>
+<tr>
+<td>Your Name:<input type="text" name="name" required/></td>
+</tr>
+
+<tr>
+<td>
+Email Address: <input type="email" name="email" required placeholder="Enter a valid email address"></td>
+</tr>
+
+<tr>
+<td>
+Random: <input type="time" name="datetime" required></td>
+</tr>
+
+<tr>
+<td>Website: <input type="url" name="website" required></td>
+</tr>
+
+<tr>
+<td><input type="submit" text="Submit" formmethod="post"/>
+</tr>
+</table>
+</form>
+</body>
+</html>
